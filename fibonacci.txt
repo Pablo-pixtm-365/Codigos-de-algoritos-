@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+float n,first,second,next=0,i;
+first=0;
+second=1;
+printf("%s\n","Put in the position of fibonacci" );
+scanf("%f",&n );
+if(n==1){
+  next=0;
+}
+if(n==2){
+  next=1;
+}
+printf("%f\n",first);
+printf("%f\n",second );
+for(i=3;i<=n;i++){
+  next=first+second;
+  printf("%f\n",next );
+  first=second;
+  second=next;
+}
+return 0;
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+int n=0;
+float price=0,iva=0,price_iva=0,subtotal=0,total=0,num_art;
+while(n!=2){
+printf("What is the price?\n");
+scanf("%f",&price);
+printf("\nNum of articles\n");
+scanf("%f",&num_art);
+price=price*num_art;
+iva=price*0.16;
+subtotal=subtotal+price;
+price_iva=price+iva;
+total=total+price_iva;
+
+printf("the price is ");
+printf("%f",price);
+printf(" the subtotal is ");
+printf("%f",subtotal);
+printf(" the total is ");
+printf("%f", total);
+printf("\nput in 1 to enter a new article\n");
+printf("\nput in 2 to exit\n");
+scanf("%i/n",&n);
+}
+return 0;
+}

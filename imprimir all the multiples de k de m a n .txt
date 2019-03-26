@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+
+int m,k,n;
+
+printf("This program find the all multiples of K in a range of m to n\n");
+printf("Put in m\n");
+scanf("%i",&m);
+printf("Put in n\n");
+scanf("%i",&n);
+printf("Put in k\n");
+scanf("%i",&k);
+for(int i=m;i<=n;i++){
+  if(i%k==0){
+    printf("%i",i);
+    printf(" is multiples of ");
+    printf("%i",k);
+    printf("\n");
+  }else{
+    printf("%i",i);
+    printf(" not is multiples of ");
+    printf("%i",k);
+    printf("\n");
+  }
+}
+return 0;
+}

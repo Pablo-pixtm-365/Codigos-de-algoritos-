@@ -1,0 +1,27 @@
+int Piramide[5000][10000];
+int n,l,f;
+int main(){
+  scanf("%d",&n);
+  l=n+(n-1);
+  f=((l/2)+1);
+  Piramide[1][f]=1;
+  for(int i=2;i<=n;i++) {
+    for(int j=1;j<=l;j++){
+      if(Piramide[i-1][j+1]!=0||Piramide[i-1][j-1]!=0){
+        Piramide[i][j]=i;
+      }
+    }
+  }
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<=l;j++){
+      if(Piramide[i][j]!=0){
+        printf("%5d",Piramide[i][j]);
+      }
+      if(Piramide[i][j]==0){
+          printf("%5s"," ");
+      }
+    }
+    printf("\n");
+  }
+  return 0;
+}

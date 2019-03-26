@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+
+int numero=0;
+
+printf("introduce un numero para mostrar sus factores primos\n");
+scanf("%d",& numero);
+if(numero>1){
+printf("%s", "2\n" );
+}
+for(int i=2;i<=numero;i++){
+  for (int  j = 2; j<i; j++) {
+    if(i%j==0){
+      break;
+    }else{
+      if(j==(i-1)){
+        printf("%i\n",i);
+      }
+    }
+  }

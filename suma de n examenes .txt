@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+  float score=0,sum=0;
+  float n_exams=0;
+  scanf("%f",&n_exams);
+  for(int i=1;i<=n_exams;i++){
+      printf("%i", i);
+      printf(" ");
+      scanf("%f",&score);
+      sum=sum+score;
+      printf("%f\n",sum);
+  }
+  sum=(sum/n_exams);
+  printf("%f",sum);
+    return 0;
+}
